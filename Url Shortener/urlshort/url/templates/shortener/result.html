@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shortened URL</title>
+</head>
+<body>
+    <h1>Shortened URL:</h1>
+    <p>Here is your shortened URL:</p>
+    <a href="{{ request.scheme }}://{{ request.get_host }}/{{ short_url }}">{{ request.scheme }}://{{ request.get_host }}/{{ short_url }}</a>
+     <br><br>
+    <a href="javascript:history.back()">Go Back</a>
+</body>
+</html>
